@@ -28,20 +28,44 @@
         <br>
         <br>
         <h2>O que é um Arduino?</h2>
+        <hr>
         <p>Segundo os criadores do Arduino: (Trecho retirado do site do Arduino - <a href="https://www.arduino.cc/en/Guide/Introduction">Arduino.cc</a>.) <em>"Arduino é uma plataforma eletrônica de código aberto baseada em hardware e software fáceis de usar.", de forma simplificada é uma plataforma que facilita o desenvolvimento de dispositivos da área de Robótica e Eletrônica, incluindo o software (IDE Arduino) onde serão escritos os códigos, além das placas que suportarão esses códigos.</em></p>
         <img src="./imgs/arduino-IDE.png" alt="Arduino IDE.">
         <img src="./imgs/arduino.png" alt="">
         <br>
         <h2>Os componentes da placa</h2>
+        <hr>
         <p>Apesar da gigante variedade de placas Arduino (UNO, MEGA...) a maioria irá seguir o mesmo padrão.</p>
         <img style="margin: 10px auto 20px; display: block;" src="./imgs/arduino2.png" alt="Componentes do Arduino.">
         <ol>
             <li><strong>Alimentação:</strong><p>As placas arduino precisam de uma fonte de alimentação constante para que funcionem, tal fonte pode ser provida por um cabo USB ou fonte de alimentação conectada na tomada, no primeiro caso a conexão ao arduino será feita com um cabo USB terminado no tipo AB <strong><em>(ITEM 1 DA IMAGEM)</em></strong>, já o segundo caso terminará em uma entrada P4 <strong><em>(ITEM 2 DA IMAGEM)</em></strong>.</p></li>
-            <li><strong>Pinos (5V, GND, Digital, Analog...):</strong><p>Os pinos no Arduino servem para conexão de fios para construção do circuito, os diferentes tipos exercem diferentes funções.</p></li>
+            <li><strong>Pinos (5V, GND, Digital, Analog...):</strong><p>Os pinos no Arduino servem para conexão de fios para construção do circuito, os diferentes tipos exercem diferentes funções.</p>
+                <p><strong>GND (ITEM 3 DA IMAGEM):</strong> abreviado de <em>"ground"</em>, do inglês, serve para aterramento elétrico do circuito.</p>
+                <p><strong>5V (ITEM 4 DA IMAGEM) e 3,3V(ITEM 5 DA IMAGEM):</strong> Ambos forncem energia para componentes conectados, contudo, a única diferença é que um deles fornece uma tensão de 5 Volts, enquanto o outro fornece 3,3 Volts.</p>
+                <p><strong>Analógico (ITEM 6 DA IMAGEM):</strong> Área nomeada como <em>"Analog In"</em> na placa, servem para leitura de sinais analógicos (de sensores analógicos) e conversão dos mesmos em valores digitais.</p>
+                <p><strong>Digital (ITEM 7 DA IMAGEM):</strong> Área nomeada como <em>"Digital"</em> na placa, servem para entrada ou saída digital.</p>
+                <p><strong>PWM (ITEM 8 DA IMAGEM):</strong> Junto dos pinos digitais é notável alguns com um sinal <em>~</em> ao seu lado, esses atuam tanto como pinos digitais normais quanto para Modulação por Larguta de Pulso (PWM).</p>
+            </li>
+            <li><strong>Botão de reset (ITEM 9 NA IMAGEM):</strong><p>O botão de reset é basicamente o sistema de reinicialização do Arduino, reiniciando a execução do código presente na placa.</p></li>
+            <li><strong>TX e RX (ITEM 11 NA IMAGEM):</strong><p>Os LEDs indicadores TX e RX possuem a função de demonstrar quando a placa está recebendo ou enviando dados, sendo TX para transmissão e RX para recebimento.</p></li>
+            <li><strong>Circuito Integrado principal (ITEM 12 NA IMAGEM):</strong><p>Principal componente da placa, é como o cérebro do Arduino, onde o código é executado.</p></li>
+            <p style="font-size: 19px;"><strong>NOTA: O seu Circuito Integrado pode se parecer diferente do que foi mostrado na imagem, contudo, ele ficará na mesma região.</strong></p>
         </ol>
-        <p><strong>NOTAS:</strong></p>
-        <ul>
+        <p style="font-size: 19px;"><strong>NOTAS:</strong></p>
+        <ul style="font-size: 19px;">
             <li>NÃO use fontes de alimentação com voltagem superior a 15V, a mesma irá superar a tensão máxima suportada pelo Arduino e queimá-lo.</li>
+        </ul>
+        <h2>Instalação da IDE e Drivers</h2>
+        <hr>
+        <p>Nesta documentação NÃO irei ensinar como instalar ou usar a Arduino IDE e nem os Drivers, isso pois se trata de um processo bem simples, basta acessar a página oficial do Arduino - <a href="https://www.arduino.cc/en/software">Arduino.cc</a> e fazer os dowloads, contudo, caso sinta alguma dificuldade em instalar, configurar e conectar o software ou a placa sugiro que siga um dos tutoriais abaixo:</p>
+        <ul>
+            <li><a href="https://www.robocore.net/tutoriais/instalando-arduino-ide.html">Instalado o Arduino IDE -<em><a href="https://www.robocore.net/">Robocore.</a></em></a></li>
+            ou
+            <li><a href="https://www.youtube.com/watch?v=EjrMvulR_fs">Como Instalar o Arduino -<em><a href="https://www.youtube.com/channel/UCcGk83PAQ5aGR7IVlD_cBaw">canal Brincando com Ideias.</a></em></a></li>
+            ou 
+            <li><a href="https://www.youtube.com/watch?v=1jpBmpTPWH8">INSTALAÇÃO DO SOFTWARE DO ARDUINO (IDE) -<em><a href="https://www.youtube.com/channel/UChymjuTJ1BIsKai5RVNlF2A">canal Arduino Brasil.</a></em></a></li>
+            ou 
+            <li><a href="https://www.youtube.com/watch?v=Fq7IspDk0YM">ARDUÍNO #7: Instalando e testando o Software do Arduíno -<em><a href="https://www.youtube.com/channel/UC7cK4BWzwQPkuN23yqBCELQ">canal GV Ensino.</a></em></a></li>
         </ul>
     </main>
 </body>
