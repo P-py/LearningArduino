@@ -55,6 +55,7 @@
         <ul style="font-size: 19px;">
             <li>NÃO use fontes de alimentação com voltagem superior a 15V, a mesma irá superar a tensão máxima suportada pelo Arduino e queimá-lo.</li>
         </ul>
+        <br>
         <h2>Instalação da IDE e Drivers</h2>
         <hr>
         <p>Nesta documentação NÃO irei ensinar como instalar ou usar a Arduino IDE e nem os Drivers, isso pois se trata de um processo bem simples, basta acessar a página oficial do Arduino - <a href="https://www.arduino.cc/en/software">Arduino.cc</a> e fazer os dowloads, contudo, caso sinta alguma dificuldade em instalar, configurar e conectar o software ou a placa sugiro que siga um dos tutoriais abaixo:</p>
@@ -67,6 +68,31 @@
             ou 
             <li><a href="https://www.youtube.com/watch?v=Fq7IspDk0YM">ARDUÍNO #7: Instalando e testando o Software do Arduíno -<em><a href="https://www.youtube.com/channel/UC7cK4BWzwQPkuN23yqBCELQ">canal GV Ensino.</a></em></a></li>
         </ul>
+        <br>
+        <h2>A protoboard</h2>
+        <hr>
+        <p><strong>NOTA:</strong> esta seção é referente à um componente que apesar de muito utilizado NÃO faz parte da placa Arduino, sendo um componente separado, caso você NÃO POSSUA uma protoboard sugiro que, além de parar por aqui neste tutorial também compre uma, pois a mesma é ESSENCIAL para o desenvolvimento de projetos.</p>
+        <img style="margin: 10px auto 20px; display: block;" src="./imgs/protoboard2.png" alt="Protoboard.">
+        <p>Antes de tudo, o que realmente é uma protoboard? Bem, como mostrada na imagem acima é uma placa de ensaio cheia de contatos eletrônicos, que tornam mais fácil os testes de circuitos e montagem dos mesmos.</p>
+        <p>Existem diversos modelos de Protoboard, a que foi mostrada na imagem possui 400 pontos/furos, mas essa quantidade varia entre 400~800~1600.</p>
+        <h3>Layout, Faixa de Barramento e Faixa de terminais.</h3>
+        <p>Na maioria dos casos a placa de ensaio (Protoboard) será dividida em partes, sendo elas a "Faixa de Barramento" (Destacada em vermelho na imagem abaixo) e a "Faixa de Terminais".</p>
+        <img style="margin: 10px auto 20px; display: block;" src="./imgs/protoboard.png" alt="Protoboard.">
+        <p>A "Faixa de Barramentos" contém os pinos de alimentação (GND, por exemplo) e tem seus furos ligados de forma horizontal. Já a "Faixa de Terminais." possui furos ligados de forma vertical e é destinada para os componentes do circuito.</p>
+        <img style="margin: 10px auto 20px; display: block;" src="./imgs/protoboard_ligação.png" alt="Layout de ligação da Protoboard.">
+        <p style="font-size: 14px; text-align: center;"><em><a href="https://www.robocore.net/">Fonte: www.robocore.net</a></em></p>
+        <h3>Primeiro experimento - testando a protoboard.</h3>
+        <p>Este experimento é bem simples e servirá apenas para testar as ligações do Arduino e da Protoboard. Serão necessários</p>
+        <ol>
+            <li>Placa Arduino + Cabo para alimentação (USB/AB ou P4)</li>
+            <li>Protoboard</li>
+            <li>LED (de qualquer cor)</li>
+            <li>Resistor 300 Ohms</li>
+            <li>4 fios conectores jumper</li>
+        </ol>
+        <p>Depois de coletar os materiais basta seguir o circuito abaixo:</p>
+        <img class="circuito-gif" style="margin: 10px auto 20px; display: block;"src="./imgs/test_simples.gif" alt="Circuito básico.">
+        <p style="font-size: 14px; text-align: center;"><em><a href="https://www.robocore.net/">Fonte: www.robocore.net</a></em></p>
     </main>
 </body>
 </html>
