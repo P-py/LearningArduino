@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Ubuntu:ital,wght@0,500;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,500;1,500&family=Noto+Sans+JP:wght@500&family=Ubuntu:ital,wght@0,500;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,500;1,500&family=JetBrains+Mono:ital,wght@0,500;1,500&family=Noto+Sans+JP:wght@500&family=Ubuntu:ital,wght@0,500;1,500&display=swap');
-@import 'jekyll-theme-hacker';
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,500;1,500&family=IBM+Plex+Sans:ital,wght@0,500;1,500&family=JetBrains+Mono:ital,wght@0,500;1,500&family=Noto+Sans+JP:wght@500&family=Ubuntu:ital,wght@0,500;1,500&display=swap');
 body, html, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li, a, main{
     margin: 0;
@@ -18,7 +17,6 @@ body, html, figure, img, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, li
     /* font-family: 'Ubuntu', sans-serif; */
     font-family: 'JetBrains Mono', sans-serif;
     /* font-family: 'IBM Plex Sans Condensed', sans-serif; */
-
 }
 body {
     width: 100%;
@@ -26,6 +24,8 @@ body {
 }
 p, h1, h2, h3, h4, h5, h6, ul, li, a {
     color: #f1f1f1;
+    text-align: justify;
+    padding: 5px;
 }
 code {
     font-family: Consolas, "courier new";
@@ -89,9 +89,20 @@ details {
 }
 img {
     padding: 10px;
-    max-width: 300px;
+    max-width: 400px;
     justify-self: center;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+    img {
+        padding: 10px;
+        max-width: 500px;
+        justify-self: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
 }
