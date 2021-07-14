@@ -89,11 +89,28 @@ details {
 }
 img {
     padding: 10px;
-    max-width: 400px;
+    max-width: 300px;
     justify-self: center;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+}
+button {
+    background-color: #3a3a3a;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    margin: 0 auto;
+    display: block;
+}
+
+button img{
+    color: rgb(255, 255, 255);
+    max-width: 42px;
+    float: right;
+}
+button a {
+    float: left;
 }
 
 @media only screen and (min-width: 768px) {
@@ -104,8 +121,36 @@ img {
         justify-content: center;
         align-items: center;
         margin: 0 auto;
+        min-width: 500px;
     }
     .circuito-gif {
         max-width: 800px;
+    }
+    button {
+        background-color: #3a3a3a;
+        border: none;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+    
+    button img{
+        color: rgb(255, 255, 255);
+        max-width: 42px;
+        min-width: 42px;
+        float: right;
+    }
+    button a {
+        float: left;
+    }
+}
+
+@media only screen and (min-width:375px) {
+    img {
+        max-width: 350px;
+    }
+}
+@media only screen and (min-width: 425px) {
+    img {
+        max-width: 400px;
     }
 }
