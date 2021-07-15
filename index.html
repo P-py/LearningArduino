@@ -76,6 +76,7 @@
         <img style="margin: 10px auto 20px; display: block;" src="./imgs/protoboard2.png" alt="Protoboard.">
         <p>Antes de tudo, o que realmente é uma protoboard? Bem, como mostrada na imagem acima é uma placa de ensaio cheia de contatos eletrônicos, que tornam mais fácil os testes de circuitos e montagem dos mesmos.</p>
         <p>Existem diversos modelos de Protoboard, a que foi mostrada na imagem possui 400 pontos/furos, mas essa quantidade varia entre 400~800~1600.</p>
+        <br>
         <h3>Layout, Faixa de Barramento e Faixa de terminais.</h3>
         <p>Na maioria dos casos a placa de ensaio (Protoboard) será dividida em partes, sendo elas a "Faixa de Barramento" (Destacada em vermelho na imagem abaixo) e a "Faixa de Terminais".</p>
         <img style="margin: 10px auto 20px; display: block;" src="./imgs/protoboard.png" alt="Protoboard.">
@@ -94,7 +95,45 @@
         <p>Depois de coletar os materiais basta seguir o circuito abaixo:</p>
         <img class="circuito-gif" style="margin: 10px auto 20px; display: block;"src="./imgs/test_simples.gif" alt="Circuito básico.">
         <p style="font-size: 14px; text-align: center;"><em><a href="https://www.robocore.net/">Fonte: www.robocore.net</a></em></p>
+        <br>
+        <h2>Introdução ao código - Lógica de programação</h2>
+        <hr>
+        <p>Uma das bases para a utilização de um Arduino, além da Eletrônica, é o código, a lógica de programação que está por trás do hardware.</p>
+        <p>Um código (software) nada mais é do que uma ordem de ações para chegar a um objetivo. Alguns exemplos de conjuntos de ações predeterminadas estão no dia a dia, nas receitas, ou nos mapas e em diversos outros. Em todos os casos citados você realiza uma ação e depois realiza a outra, a partir desse conceito também podemos deixar tudo mais complexo, incluindo condicionais, loops e etc.</p>
+        <h3>O código no arduino</h3>
+        <img style="margin: 10px auto 20px; display: block;" src="./imgs/exemplo_de_um_código_arduino.gif" alt="Exemplo de um código Arduino.">
+        <p style="font-size: 14px; text-align: center;"><em><a href="https://www.robocore.net/">Fonte: www.robocore.net</a></em></p>
+        <p>No caso dos códigos que os microcontroladores Arduino rodam temos a estrutura mostrada acima (Retirada de um exemplo nativo da IDE) como um padrão, sendo ela um bloco <code>setup()</code>, onde é configurada e preparada a estrutura do código, ali são definidos: tipos de pinos, comunicação serial e sua velocidade, etc. Abaixo do bloco <code>setup()</code> também temos o bloco <code>loop()</code>, bloco cujo código será repetido indefinidamente.</p>
+        <img style="margin: 10px auto 20px; display: block;" src="./imgs/estrutura_do_código.png" alt="Estrutura do código Arduino.">
+        <p>Por fim, a estrutura básica e muitas vezes padrão de um código Arduino é a mesma da imagem acima:</p>
+        <ol>
+            <li>Um bloco de variáveis que irá conter as variáveis globais utilizadas no código;</li>
+            <li>Um bloco Setup que conterá as principais informações de configuração como entradas, saídas, comunicação serial e outros;</li>
+            <li>Um bloco Loop principal que rodará o código em laço infinito;</li>
+            <li>Um bloco de demais funções que conterá o restante do código, caso o mesmo exista.</li>
+        </ol>
+        <p>Alguns dos elementos utilizados possuem ao seu lado o símbolo <code>()</code>, isso indica que elas são funções, além de tudo algumas possuem informações dentro de seus parêntesis, essas informações são parâmetros de função e podem aparecer ou não, dependendo apenas do tipo de função. Quanto aos símbolos <code>{}</code> e <code>;</code>, eles servem para delimitar a função e a linha de código, respectivamente.</p>
+        <br>
+        <h3>Compilador de código</h3>
+        <p>Já citado aqui algumas vezes, o compilador de código serve para traduzir a linguagem de programação, C/C++ nesse caso, em linguagem de máquina, para que o microcontrolador (Arduino) seja capaz de entender e executar-lo.</p>
+        <br>
+        <br>
+        <p><strong>NOTA:</strong> A plataforma Arduino utiliza a linguagem de programação C/C++, essa é uma linguagem cujo compilador de código é <em>case sensitive</em>, isso significa que é sensível na diferenciação entre letras maiúculas e minúsculas, portanto variáveis iguais com letras em tamanhos diferentes são variáveis diferentes, <code>ESTa</code> não é igual a <code>estA</code>.</p>
+        <br>
+        <h2>Eletrônica básica</h2>
+        <hr>
+        <p>Como dito anteriormente, além das noções básicas de software também precisamos das noções básicas do hardware do Arduino, sendo assim, Eletrônica básica.</p>
+        <h3>Elétrica: resistência, corrente, tensão.</h3>
+        <p>No caso de uma simples lâmpada ligada à uma bateria de 5V, porque ela acende? Isso acontece pois quando conectado à fonte de energia (bateria, nesse caso), as partículas (elétrons) fluem entre os terminais da bateria, o fluxo criado tem o nome de corrente elétrica, e só acontece quando há diferença de potencial, essa diferença é a tensão elétrica.</p>
+        <p>A lei de Ohm é a determinante da relação entre essas 3 grandezas (resistência, tensão, corrente), através das fórmulas abaixo:</p>
+        <img style="margin: 10px auto 20px; display: block;" src="./imgs/lei_de_ohm.png" alt="Lei de Ohm.">
+        <p>Segundo o Sistema Internacional de Unidades (S.I): Resistência elétrica é medida em Ohms, representada por Ω; tensão elétrica é medida em Volts e representada por V; corrente elétrica é medida em Amperes e representada por A.</p>
+        <h3>Representação dos valores elétricos.</h3>
+        <p>Na maioria das vezes, por variar muito, os valores elétricos serão representados junto à prefixos, algumas tabelas dos mais usados:</p>
+        <img style="margin: 10px auto 20px; display: block;" src="./imgs/representação_dos_valores_elétricos.png" alt="Tabela de representação dos valores elétricos.">
+        <img style="margin: 10px auto 20px; display: block;" src="./imgs/" alt="">
+
     </main>
-    <p style="text-align: center; font-size: 50px; padding-top: 50px;">(O RESTANTE DO CONTEÚDO ESTARÁ DISPONÍVEL EM BREVE)</p>
+    <!-- <p style="text-align: center; font-size: 50px; padding-top: 50px;">(O RESTANTE DO CONTEÚDO ESTARÁ DISPONÍVEL EM BREVE)</p> -->
 </body>
 </html>

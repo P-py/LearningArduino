@@ -27,12 +27,15 @@ p, h1, h2, h3, h4, h5, h6, ul, li, a {
     text-align: justify;
     padding: 5px;
 }
+p, li, strong, em {
+    font-size: 17px;
+}
 code {
-    font-family: Consolas, "courier new";
+    font-family: 'JetBrains Mono', sans-serif;
     color: crimson;
     background-color: #f1f1f1;
     padding: 2px;
-    font-size: 105%;
+    font-size: 110%;
 }
 header {
     padding: 5px;
